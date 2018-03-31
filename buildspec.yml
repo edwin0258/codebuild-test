@@ -2,6 +2,12 @@
 version: 0.2
 
 phases:
-    pre-build:
+    PRE_BUILD:
         commands:
             - echo "Hello"
+    BUILD:
+        commands:
+            - echo "build"
+    POST_BUILD:
+        commands:
+            - echo "ok"
