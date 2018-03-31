@@ -13,3 +13,6 @@ phases:
 artifacts:
     files:
         - "**/*"
+cache:
+    files:
+        - "**/*"
