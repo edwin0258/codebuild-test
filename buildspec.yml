@@ -4,10 +4,11 @@ version: 0.2
 phases:
     PRE_BUILD:
         commands:
-            - echo "Hello"
+            - git clone git@github.com:duo-labs/cloudmapper.git
     BUILD:
         commands:
-            - echo "build"
+            - docker-compose build
+            - accountname="demo" docker-compose up
     POST_BUILD:
         commands:
             - echo "ok"
