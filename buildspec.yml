@@ -9,7 +9,7 @@ phases:
         commands:
             - docker-compose build
             - accountname="demo" docker-compose up
-            - touch hello.js
+            - echo "Hello World" > test.txt
 artifacts:
     files:
         - "**/*"
