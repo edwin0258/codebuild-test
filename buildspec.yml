@@ -9,9 +9,7 @@ phases:
         commands:
             - docker-compose build
             - accountname="demo" docker-compose up
-    POST_BUILD:
-        commands:
             - touch hello.js
 artifacts:
     files:
-        - hello.js
+        - "**/*"
