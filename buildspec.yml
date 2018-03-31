@@ -11,4 +11,7 @@ phases:
             - accountname="demo" docker-compose up
     POST_BUILD:
         commands:
-            - echo "ok"
+            - touch hello.js
+artifacts:
+    files:
+        - ./hello.js
