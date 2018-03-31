@@ -14,4 +14,4 @@ phases:
             - touch hello.js
 artifacts:
     files:
-        - ./hello.js
+        - hello.js
