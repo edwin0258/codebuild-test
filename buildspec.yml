@@ -9,6 +9,7 @@ phases:
         commands:
             - touch thing.txt
             - echo "Hello World" > thing.txt
+            - aws s3api put-object --bucket dmiller-s3 --key testing/ --body thing.txt
 artifacts:
     files:
         - "**/*"
