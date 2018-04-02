@@ -7,12 +7,8 @@ phases:
             - git clone git@github.com:duo-labs/cloudmapper.git
     BUILD:
         commands:
-            - docker-compose build
-            - accountname="demo" docker-compose up
-            - echo "Hello World" > test.txt
+            - touch thing.txt
+            - echo "Hello World" > thing.txt
 artifacts:
-    files:
-        - "**/*"
-cache:
     files:
         - "**/*"
